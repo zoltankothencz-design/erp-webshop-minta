@@ -234,6 +234,32 @@ $router->post('/_reset', function (): Response {
     return Response::json(['reset' => true]);
 });
 
+// Olvasható "ERP-képernyő": ezt látná az ERP üzemeltetője. Itt követhető, mit kap és mit változtat a webshop.
+$router->get('/_erp', function (): Response {
+    $s = mock_state();
+    $h = fn($v) => htmlspecialchars((string) $v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+    $rows = '';
+    foreach ($s['products'] as $p) {
+        $rows .= '<tr><td>' . $h($p['sku']) . '</td><td>' . $h($p['name']) . '</td><td>' . number_format($p['price'], 0, ',', ' ') . ' Ft</td><td><b>'
+            . $h($p['stock']) . '</b></td><td>' . $h($p['updated_at']) . '</td></tr>';
+    }
+    $orders = '';
+    foreach (array_reverse($s['erp_orders'], true) as $id => $o) {
+        $lines = implode(', ', array_map(fn($i) => $h($i['sku']) . ' x' . (int) $i['qty'], $o['items'] ?? []));
+        $orders .= '<tr><td>' . $h($id) . '</td><td>' . $h($o['order_no'] ?? '') . '</td><td>' . $h($o['source'] ?? '') . '</td><td>' . $lines . '</td><td>'
+            . number_format((int) ($o['total'] ?? 0), 0, ',', ' ') . ' Ft</td></tr>';
+    }
+    $html = '<!doctype html><html lang="hu"><meta charset="utf-8"><meta http-equiv="refresh" content="5"><title>ERP (szimulált)</title>'
+        . '<style>body{font:15px system-ui;margin:24px;max-width:960px}table{border-collapse:collapse;width:100%;margin:8px 0 28px}'
+        . 'td,th{border:1px solid #ccc;padding:5px 9px;text-align:left}th{background:#eee}.n{background:#fff3cd;padding:8px 12px;border-radius:6px}</style>'
+        . '<h1>ERP (szimulált)</h1><p class="n">Ez a webshopon kívüli rendszer. A webshop ezt az adatot húzza le (<code>erp-products</code>), '
+        . 'és ide küldi a rendeléseket (<code>erp-orders</code>). Az oldal 5 másodpercenként frissül.</p>'
+        . '<h2>Rendelések az ERP-ben (' . count($s['erp_orders']) . ')</h2><table><tr><th>ERP azonosító</th><th>Webshop rendelésszám</th><th>Forrás</th><th>Tételek</th><th>Összeg</th></tr>'
+        . ($orders ?: '<tr><td colspan="5">Még nincs: a webshop rendelései az <code>erp-orders</code> feladattal érkeznek ide.</td></tr>') . '</table>'
+        . '<h2>Termékek és készlet az ERP-ben (' . count($s['products']) . ')</h2><table><tr><th>Cikkszám</th><th>Név</th><th>Ár</th><th>Készlet</th><th>Utoljára módosítva</th></tr>' . $rows . '</table></html>';
+    return Response::html($html);
+});
+
 $router->get('/_state', function (): Response {
     $s = mock_state();
     return Response::json(['products' => count($s['products']), 'erp_orders' => count($s['erp_orders']), 'mp_orders' => count($s['mp_orders']),
