@@ -1,0 +1,6 @@
+.env
+.tools/
+storage/logs/*
+storage/mock/*
+!storage/logs/.gitkeep
+!storage/mock/.gitkeep
