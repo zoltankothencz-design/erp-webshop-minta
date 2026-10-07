@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+use App\Controller\AdminController;
 use App\Controller\ApiController;
 use App\Controller\FeedController;
 use App\Controller\PageController;
@@ -21,6 +22,16 @@ return function (Router $router): void {
     $router->get('/api/products/{slug}', [$api, 'product']);
     $router->get('/api/categories', [$api, 'categories']);
     $router->post('/api/orders', [$api, 'createOrder']);
+
+    // Admin / marketing információs felület (belépés kell)
+    $admin = new AdminController();
+    $router->get('/admin/login', [$admin, 'loginForm']);
+    $router->post('/admin/login', [$admin, 'login']);
+    $router->post('/admin/logout', [$admin, 'logout']);
+    $router->get('/admin', [$admin, 'dashboard']);
+    $router->get('/admin/api/summary', [$admin, 'summary']);
+    $router->post('/admin/api/jobs/{name}', [$admin, 'runJob']);
+    $router->post('/admin/api/ai/{id}/{action}', [$admin, 'reviewAi']);
 
     // Termék-feedek (Google Merchant Center, marketplace-ek)
     $feeds = new FeedController();
