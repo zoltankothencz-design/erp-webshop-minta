@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 use App\Controller\ApiController;
+use App\Controller\FeedController;
 use App\Controller\PageController;
 use App\Router;
 
@@ -20,4 +21,9 @@ return function (Router $router): void {
     $router->get('/api/products/{slug}', [$api, 'product']);
     $router->get('/api/categories', [$api, 'categories']);
     $router->post('/api/orders', [$api, 'createOrder']);
+
+    // Termék-feedek (Google Merchant Center, marketplace-ek)
+    $feeds = new FeedController();
+    $router->get('/feed/google.xml', [$feeds, 'google']);
+    $router->get('/feed/marketplace.xml', [$feeds, 'marketplace']);
 };

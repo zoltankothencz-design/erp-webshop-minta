@@ -95,6 +95,70 @@ final class OrderService
     }
 
     /**
+     * Marketplace-en leadott rendelés felvétele. Itt a marketplace adata az irányadó (ő szedte be az árat),
+     * a duplikátumot az egyedi kulcs (source + marketplace_ref) védi ki, így az import bármikor újra futtatható.
+     *
+     * @return 'created'|'duplicate'
+     */
+    public function importMarketplaceOrder(array $mo): string
+    {
+        $ref = trim((string) ($mo['marketplace_ref'] ?? ''));
+        $buyer = is_array($mo['buyer'] ?? null) ? $mo['buyer'] : [];
+        $items = $mo['items'] ?? null;
+        if ($ref === '' || mb_strlen($ref) > 60 || !is_array($items) || $items === []) {
+            throw new \InvalidArgumentException('Hiányos marketplace rendelés (azonosító vagy tételek).');
+        }
+
+        $pdo = Db::pdo();
+        $pdo->beginTransaction();
+        try {
+            $skus = array_values(array_unique(array_map(fn($i) => (string) ($i['sku'] ?? ''), $items)));
+            $rows = Db::all('SELECT id, sku, name FROM products WHERE sku IN (' . Db::placeholders($skus) . ') ORDER BY id FOR UPDATE', $skus);
+            $bySku = array_column($rows, null, 'sku');
+
+            $total = 0;
+            foreach ($items as $i) {
+                if (!isset($bySku[$i['sku'] ?? ''])) {
+                    throw new \InvalidArgumentException('Ismeretlen cikkszám a marketplace rendelésben: ' . ($i['sku'] ?? '?'));
+                }
+                $total += (int) $i['unit_price'] * (int) $i['qty'];
+            }
+            $orderId = Db::insert(
+                'INSERT INTO orders (order_no, source, marketplace_ref, customer_name, email, phone, address, total, status)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [
+                    'M' . date('ymd') . '-' . strtoupper(bin2hex(random_bytes(3))), 'marketplace', $ref,
+                    $this->clean($buyer['name'] ?? '', 150), $this->clean($buyer['email'] ?? '', 190),
+                    $this->clean($buyer['phone'] ?? '', 40), $this->clean($buyer['address'] ?? '', 255), $total, 'new',
+                ]
+            );
+            foreach ($items as $i) {
+                $p = $bySku[$i['sku']];
+                Db::run(
+                    'INSERT INTO order_items (order_id, product_id, sku, name, unit_price, qty) VALUES (?, ?, ?, ?, ?, ?)',
+                    [$orderId, $p['id'], $p['sku'], $p['name'], (int) $i['unit_price'], (int) $i['qty']]
+                );
+                Db::run('UPDATE products SET stock = GREATEST(stock - ?, 0) WHERE id = ?', [(int) $i['qty'], $p['id']]);
+            }
+            $pdo->commit();
+            return 'created';
+        } catch (\PDOException $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            if (($e->errorInfo[1] ?? 0) === 1062) {   // duplicate key: ezt a rendelést már importáltuk
+                return 'duplicate';
+            }
+            throw $e;
+        } catch (\Throwable $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            throw $e;
+        }
+    }
+
+    /**
      * @param array<string,string> $errors
      * @return array<string,int> sku => darabszám (azonos termék többszöri szereplése összevonva)
      */
