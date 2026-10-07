@@ -18,6 +18,11 @@ final class JobRunner
         return [
             'erp-products' => fn() => (new ErpSyncService(Integrations::erp()))->syncProducts(),
             'erp-orders' => fn() => (new ErpSyncService(Integrations::erp()))->pushOrders(),
+            'marketplace-orders' => fn() => (new MarketplaceService(Integrations::marketplace()))->importOrders(),
+            'marketplace-offers' => fn() => (new MarketplaceService(Integrations::marketplace()))->pushOffers(),
+            'ads-stats' => fn() => (new AdsService(Integrations::ads()))->syncStats(),
+            'ads-conversions' => fn() => (new AdsService(Integrations::ads()))->uploadConversions(),
+            'ai-descriptions' => fn() => (new ProductDescriptionService(Integrations::ai()))->generateMissing(5),
         ];
     }
 
