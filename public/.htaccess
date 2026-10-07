@@ -1,0 +1,4 @@
+# Apache (pl. Tárhelypark/cPanel): minden kérés az index.php-ra megy, kivéve a létező statikus fájlokat.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

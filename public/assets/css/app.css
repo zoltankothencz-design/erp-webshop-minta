@@ -1,0 +1,57 @@
+:root{--bg:#f6f7f9;--ink:#1d2430;--muted:#667085;--line:#dfe3ea;--brand:#0b5fff;--brand-d:#0846c2;--ok:#127a3d;--err:#b42318;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--brand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--ink)}
+.search{flex:1;display:flex;gap:8px;min-width:200px}
+.search input{flex:1;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font:inherit}
+button,.btn{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:8px 14px;background:var(--brand);color:#fff}
+button:hover,.btn:hover{background:var(--brand-d)}
+.cart-link{text-decoration:none;font-weight:600}
+.badge{display:inline-block;min-width:1.5em;text-align:center;background:var(--ink);color:#fff;border-radius:99px;padding:0 6px;font-size:.85rem}
+h1{margin:24px 0 12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:5px 12px;border:1px solid var(--line);border-radius:99px;background:#fff;text-decoration:none;color:var(--ink)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-bottom:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column}
+.card img{width:100%;height:auto;border-radius:8px;background:#eef1f5}
+.card h2{font-size:1rem;margin:10px 0 4px}
+.card h2 a{color:var(--ink);text-decoration:none}
+.card .btn{margin-top:auto}
+.muted{color:var(--muted);font-size:.9rem;margin:2px 0}
+.price{font-weight:700;margin:6px 0}
+.price.big{font-size:1.6rem}
+.out{color:var(--err);font-weight:600}
+.ok{color:var(--ok);font-weight:600}
+.detail{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.detail img{width:100%;height:auto;border-radius:8px;background:#eef1f5}
+@media(max-width:640px){.detail{grid-template-columns:1fr}}
+.cart-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+.cart-table th,.cart-table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+.cart-table input[type=number]{width:64px;padding:4px;font:inherit}
+.cart-table .link{background:none;color:var(--err);padding:0}
+form label{display:block;margin:10px 0;font-weight:600}
+form input{display:block;width:100%;max-width:480px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font:inherit;margin-top:4px}
+.error{color:var(--err);font-weight:600}
+.site-footer{color:var(--muted);font-size:.9rem;padding:24px 16px}
+code{background:#eceff4;padding:1px 5px;border-radius:4px}
+[hidden]{display:none!important}
+/* Admin felület */
+.admin-nav{display:flex;gap:16px;align-items:center;background:#111827;color:#fff;padding:10px 16px}
+.admin-nav a{color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi b{display:block;font-size:1.5rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:16px 0;overflow-x:auto}
+.panel table{width:100%;border-collapse:collapse;font-size:.92rem}
+.panel th,.panel td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:.8rem;background:#e5e7eb}
+.pill.ok{background:#d1fadf;color:#05603a}.pill.error{background:#fee4e2;color:#912018}.pill.running{background:#fef0c7;color:#93370d}
+.jobs{display:flex;gap:8px;flex-wrap:wrap}
+.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn.secondary:hover{background:#f2f4f7}
+.toast{margin:8px 0;padding:8px 12px;border-radius:8px;background:#eef4ff}
