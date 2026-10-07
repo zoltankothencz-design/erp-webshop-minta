@@ -12,7 +12,7 @@
   <div class="wrap bar">
     <a class="brand" href="/">Mintabolt</a>
     <form class="search" action="/" method="get" role="search">
-      <input type="search" name="q" placeholder="Keresés: név, cikkszám, márka" value="<?= e($_GET['q'] ?? '') ?>" aria-label="Keresés">
+      <input type="search" name="q" placeholder="Keresés: név, cikkszám, márka" value="<?= e(is_string($_GET['q'] ?? null) ? $_GET['q'] : '') ?>" aria-label="Keresés">
       <button type="submit">Keresés</button>
     </form>
     <a class="cart-link" href="/cart">Kosár <span id="cart-count" class="badge">0</span></a>
