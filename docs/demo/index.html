@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP-webshop minta: demó</title>
+  <meta name="description" content="PHP 8 + MySQL webshop ERP-, marketplace-, Google Ads- és AI-integrációval: kipróbálható statikus pillanatkép és képernyőképek.">
+  <style>
+    :root { color-scheme: light dark; --bg:#fafaf8; --fg:#1d2330; --muted:#5b6475; --line:#d9dce3; --card:#fff; --accent:#1b5fd1; --warn:#fff4d6; --warnline:#e6c875; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#14171f; --fg:#e8eaf0; --muted:#9aa3b5; --line:#2c3242; --card:#1c202b; --accent:#7aa7ff; --warn:#3a3217; --warnline:#6b5a22; } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .wrap { max-width:860px; margin:0 auto; padding:0 16px 48px; }
+    h1 { font-size:1.9rem; margin:2rem 0 .4rem; line-height:1.2; }
+    h2 { font-size:1.2rem; margin:2rem 0 .6rem; }
+    p { margin:.4rem 0 .8rem; }
+    a { color:var(--accent); }
+    .lead { color:var(--muted); font-size:1.05rem; }
+    .note { background:var(--warn); border:1px solid var(--warnline); border-radius:8px; padding:.7rem .9rem; margin:1.2rem 0; font-size:.95rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin:.8rem 0; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.9rem 1rem; }
+    .card h3 { margin:0 0 .3rem; font-size:1.02rem; }
+    .card p { margin:0; color:var(--muted); font-size:.93rem; }
+    .btn { display:inline-block; margin-top:.6rem; padding:.45rem .9rem; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; font-size:.95rem; }
+    @media (prefers-color-scheme: dark) { .btn { color:#0b1220; } }
+    ul { padding-left:1.2rem; }
+    li { margin:.25rem 0; }
+    figure { margin:1rem 0; }
+    figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; display:block; }
+    .crop { max-height:520px; overflow:hidden; position:relative; border-radius:8px; }
+    figcaption { color:var(--muted); font-size:.9rem; margin-top:.4rem; }
+    code { background:var(--card); border:1px solid var(--line); border-radius:4px; padding:0 .3rem; font-size:.92em; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ERP-hez kapcsolódó webshop: demó</h1>
+  <p class="lead">Kis, de teljes e-kereskedelmi rendszer PHP 8 + MySQL alapon, keretrendszer nélkül: termékek és készlet az ERP-ből, rendelés vissza az ERP-be, marketplace-import, Google Ads költség és konverzió, AI-termékleírás emberi jóváhagyással.</p>
+
+  <div class="note">
+    <strong>Ez statikus pillanatkép.</strong> A valódi alkalmazás PHP-t és adatbázist igényel, ezt a GitHub Pages nem futtat. A bolt oldalai a futó rendszerből lettek lementve, a kosár a böngésződben működik, a rendelés <em>nem kerül sehová</em>. Az admin felület és a szimulált ERP képernyőképen látható. A cég, a termékek és a külső rendszerek kitalált, éles fiókkal nem volt kipróbálva.
+  </div>
+
+  <h2>Próbáld ki</h2>
+  <div class="grid">
+    <div class="card"><h3>Webshop</h3><p>24 termék, kategóriák, keresés, terméklapok. Tegyél a kosárba, és add le a rendelést (nem valódi).</p><a class="btn" href="shop/">Megnyitás</a></div>
+    <div class="card"><h3>Google Merchant feed</h3><p>A webshop termékeiből generált XML-feed, ahogy a hirdetési rendszer olvasná.</p><a class="btn" href="shop/feed/google.xml">XML megtekintése</a></div>
+    <div class="card"><h3>Terméklista API</h3><p>A nyilvános REST API válasza JSON-ban (<code>/api/products</code>).</p><a class="btn" href="shop/api/products.json">JSON megtekintése</a></div>
+  </div>
+
+  <h2>A háttérben dolgozó rész (képernyőkép)</h2>
+  <figure>
+    <div class="crop"><img src="img/admin-attekintes.png" alt="Admin áttekintés: rendelések, bevétel, hirdetési költség, ROAS, kampánytáblázat, rendelések, AI-piszkozatok jóváhagyásra" loading="lazy"></div>
+    <figcaption>Admin: eladás és hirdetési költség egy helyen, integrációs feladatok kézi indítása, AI-leírás-piszkozatok jóváhagyása. A ROAS két értéke szándékosan eltér (a saját rendelésekből számolt és a Google által jelentett), és a felület magyarázza, miért. <a href="img/admin-attekintes.png">Teljes kép</a></figcaption>
+  </figure>
+  <figure>
+    <div class="crop"><img src="img/szimulalt-erp.png" alt="A szimulált ERP: az ERP-be érkezett rendelések és a termékkészlet" loading="lazy"></div>
+    <figcaption>A szimulált ERP, amellyel a webshop szinkronizál: ide érkeznek a rendelések, innen jön a termék és a készlet. <a href="img/szimulalt-erp.png">Teljes kép</a></figcaption>
+  </figure>
+
+  <h2>Mit érdemes megnézni a kódban</h2>
+  <ul>
+    <li>Idempotens integrációk: bármikor újrafuttatható feladatok, egyedi kulcsok, rendelés-visszaírás idempotencia-kulccsal.</li>
+    <li>Készlet-zárolás tranzakcióval és <code>SELECT ... FOR UPDATE</code>, a termék ára mindig az adatbázisból jön.</li>
+    <li>24 automatizált teszt, a külső hívások hamis transporttal tesztelve.</li>
+    <li>Titkok csak <code>.env</code>-ben, minden külső hívás egy hibatűrő HTTP-kliensen át.</li>
+  </ul>
+  <p>
+    <a href="https://github.com/zoltankothencz-design/erp-webshop-minta">Forráskód a GitHubon</a> ·
+    <a href="https://github.com/zoltankothencz-design/erp-webshop-minta/blob/main/docs/LEPESEK.md">Lépésenkénti magyarázat</a> ·
+    <a href="https://github.com/zoltankothencz-design/erp-webshop-minta#readme">README</a>
+  </p>
+</div>
+</body>
+</html>

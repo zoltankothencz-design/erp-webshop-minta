@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+ <channel>
+  <title>Mintabolt</title>
+  <link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/</link>
+  <description>Mintabolt termékfeed</description>
+  <item>
+   <g:id>CAB-10</g:id>
+   <g:title>Antennakábel 10 m</g:title>
+   <g:description>Koaxiális kábel, 10 m, N csatlakozó.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/antennakabel-10-m-cab-10</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>3200 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000110</g:gtin>
+  </item>
+  <item>
+   <g:id>CAB-20</g:id>
+   <g:title>Antennakábel 20 m</g:title>
+   <g:description>Koaxiális kábel, 20 m, N csatlakozó.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/antennakabel-20-m-cab-20</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>6300 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000127</g:gtin>
+  </item>
+  <item>
+   <g:id>DECT-10</g:id>
+   <g:title>Asztali DECT telefon</g:title>
+   <g:description>Vezeték nélküli asztali telefon, hívóazonosítás, 200 névjegy.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/asztali-dect-telefon-dect-10</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>18900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000059</g:gtin>
+  </item>
+  <item>
+   <g:id>URH-CAR</g:id>
+   <g:title>Autós URH rádió</g:title>
+   <g:description>Fix beépíthető autós rádió, 25 W, mikrofonnal.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/autos-urh-radio-urh-car</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>62900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000042</g:gtin>
+  </item>
+  <item>
+   <g:id>DECT-20</g:id>
+   <g:title>DECT telefon, 2 kézibeszélő</g:title>
+   <g:description>Két kézibeszélős DECT szett, üzenetrögzítővel.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/dect-telefon-2-kezibeszelo-dect-20</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>27900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000066</g:gtin>
+  </item>
+  <item>
+   <g:id>MNT-WALL</g:id>
+   <g:title>Falikonzol antennához</g:title>
+   <g:description>Rozsdamentes falikonzol, 40 cm kinyúlás.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/falikonzol-antennahoz-mnt-wall</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>2900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000233</g:gtin>
+  </item>
+  <item>
+   <g:id>SW-8</g:id>
+   <g:title>Hálózati switch 8 port</g:title>
+   <g:description>Nem menedzselhető gigabites switch, 8 port, fémházas.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/halozati-switch-8-port-sw-8</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>12900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000240</g:gtin>
+  </item>
+  <item>
+   <g:id>HS-RADIO</g:id>
+   <g:title>Hangosbeszélő-mikrofon URH-hoz</g:title>
+   <g:description>Vállra csíptethető hangosbeszélő mikrofon kézi adóvevőkhöz.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/hangosbeszelo-mikrofon-urh-hoz-hs-radio</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>7900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000202</g:gtin>
+  </item>
+  <item>
+   <g:id>ANT-YAGI</g:id>
+   <g:title>Irányított antenna 700-2600 MHz</g:title>
+   <g:description>Irányított LTE antenna, SMA csatlakozó.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/iranyitott-antenna-700-2600-mhz-ant-yagi</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>14900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000103</g:gtin>
+  </item>
+  <item>
+   <g:id>BOOST-3</g:id>
+   <g:title>Jelerősítő tápegység</g:title>
+   <g:description>Pótló tápegység a jelerősítőkhöz, 12 V.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/jelerosito-tapegyseg-boost-3</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>6900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000172</g:gtin>
+  </item>
+  <item>
+   <g:id>URH-100</g:id>
+   <g:title>Kézi URH adóvevő 5 W</g:title>
+   <g:description>Kézi URH adóvevő 5 W: Vetron márkájú termék a(z) Rádió kategóriából. Kézi URH adóvevő, 16 csatorna, 5 W teljesítmény, cserélhető akkumulátor. (Mintaszöveg, nem valódi AI-kimenet.)</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/kezi-urh-adovevo-5-w-urh-100</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>45900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000011</g:gtin>
+  </item>
+  <item>
+   <g:id>URH-200</g:id>
+   <g:title>Kézi URH adóvevő 8 W, IP67</g:title>
+   <g:description>Vízálló (IP67) kézi adóvevő, 8 W, 32 csatorna, zajszűrő.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/kezi-urh-adovevo-8-w-ip67-urh-200</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>76400 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000028</g:gtin>
+  </item>
+  <item>
+   <g:id>BOOST-2</g:id>
+   <g:title>Mobil jelerősítő, iroda</g:title>
+   <g:description>Nagyobb irodákhoz, több frekvenciasáv, felügyeleti port.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/mobil-jelerosito-iroda-boost-2</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>138600 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000165</g:gtin>
+  </item>
+  <item>
+   <g:id>BOOST-1</g:id>
+   <g:title>Mobil jelerősítő, lakás</g:title>
+   <g:description>Mobilhálózati jelerősítő lakásokhoz, belső és külső antennával.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/mobil-jelerosito-lakas-boost-1</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>89000 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000158</g:gtin>
+  </item>
+  <item>
+   <g:id>FIB-10</g:id>
+   <g:title>Optikai patch kábel 10 m</g:title>
+   <g:description>Duplex LC-LC patch kábel, 10 m, egymódusú.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/optikai-patch-kabel-10-m-fib-10</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>3900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000141</g:gtin>
+  </item>
+  <item>
+   <g:id>FIB-3</g:id>
+   <g:title>Optikai patch kábel 3 m</g:title>
+   <g:description>Duplex LC-LC patch kábel, 3 m, egymódusú.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/optikai-patch-kabel-3-m-fib-3</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>out_of_stock</g:availability>
+   <g:price>2400 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000134</g:gtin>
+  </item>
+  <item>
+   <g:id>BAT-URH</g:id>
+   <g:title>Pótakkumulátor URH-hoz</g:title>
+   <g:description>Li-ion pótakkumulátor, 2000 mAh.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/potakkumulator-urh-hoz-bat-urh</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>8900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000226</g:gtin>
+  </item>
+  <item>
+   <g:id>ANT-OM</g:id>
+   <g:title>Rúdantenna 2,4 GHz</g:title>
+   <g:description>Kültéri rúdantenna, 2,4 GHz, 8 dBi nyereség.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/rudantenna-2-4-ghz-ant-om</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>8900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000097</g:gtin>
+  </item>
+  <item>
+   <g:id>CHG-URH</g:id>
+   <g:title>Töltőállvány URH-hoz</g:title>
+   <g:description>Asztali töltőállvány a Vetron kézi adóvevőkhöz.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/toltoallvany-urh-hoz-chg-urh</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>6900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Vetron</g:brand>
+   <g:gtin>5990000000219</g:gtin>
+  </item>
+  <item>
+   <g:id>URH-PAIR</g:id>
+   <g:title>URH adóvevő pár, 2 db</g:title>
+   <g:description>Két darabos szett, töltőállvánnyal, hatótávolság nyílt terepen kb. 5 km.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/urh-adovevo-par-2-db-urh-pair</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>39900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000035</g:gtin>
+  </item>
+  <item>
+   <g:id>HS-20</g:id>
+   <g:title>Vezeték nélküli headset</g:title>
+   <g:description>Bluetooth headset, 12 órás üzemidő, töltődokkal.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/vezetek-nelkuli-headset-hs-20</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>28400 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000196</g:gtin>
+  </item>
+  <item>
+   <g:id>HS-10</g:id>
+   <g:title>Vezetékes fejhallgató mikrofonnal</g:title>
+   <g:description>Irodai headset, USB, zajszűrős mikrofon.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/vezetekes-fejhallgato-mikrofonnal-hs-10</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>9900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Optilink</g:brand>
+   <g:gtin>5990000000189</g:gtin>
+  </item>
+  <item>
+   <g:id>VOIP-30</g:id>
+   <g:title>VoIP asztali telefon</g:title>
+   <g:description>SIP-kompatibilis asztali telefon, PoE táplálás, színes kijelző.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/voip-asztali-telefon-voip-30</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>32900 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000073</g:gtin>
+  </item>
+  <item>
+   <g:id>VOIP-40</g:id>
+   <g:title>VoIP konferencia telefon</g:title>
+   <g:description>Konferenciahívásokhoz, 360 fokos mikrofon, USB és Bluetooth.</g:description>
+   <g:link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/voip-konferencia-telefon-voip-40</g:link>
+   <g:image_link>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/assets/placeholder.svg</g:image_link>
+   <g:availability>in_stock</g:availability>
+   <g:price>119000 HUF</g:price>
+   <g:condition>new</g:condition>
+   <g:brand>Nordcom</g:brand>
+   <g:gtin>5990000000080</g:gtin>
+  </item>
+ </channel>
+</rss>

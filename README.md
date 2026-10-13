@@ -9,6 +9,11 @@ A kód Claude Code-dal készült, lépésenként, git-előzménnyel. A teljes ma
 > A cég, a márkák és a termékek kitaláltak. A külső rendszerek (ERP, marketplace, Google Ads) a helyi, szimulált szerveren futnak
 > (`mock/`). A kód ugyanazt a formát használja, mint a valódi API-k, de **éles fiókkal nem volt kipróbálva**.
 
+## Demó
+
+**[Statikus demó (GitHub Pages)](https://zoltankothencz-design.github.io/erp-webshop-minta/demo/)**: kipróbálható webshop-pillanatkép (kosár a böngészőben, a rendelés nem kerül sehová), a Google-feed, a terméklista-API válasza, valamint az admin felület és a szimulált ERP képernyőképe.
+A pillanatkép a futó rendszerből készül: `python scripts/build-static-demo.py` (előtte `dev.ps1 start`).
+
 ## Gyors indítás (Windows, PowerShell)
 
 A futtatókörnyezet (hordozható PHP + MariaDB) a `.tools/` mappában van, rendszerszintű telepítés nem kell.

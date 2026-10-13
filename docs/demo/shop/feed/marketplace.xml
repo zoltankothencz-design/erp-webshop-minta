@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products generated="2026-10-13T18:30:36+02:00">
+ <product>
+  <sku>CAB-10</sku>
+  <name>Antennakábel 10 m</name>
+  <brand>Optilink</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000110</ean>
+  <price_gross>3200</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/antennakabel-10-m-cab-10</url>
+ </product>
+ <product>
+  <sku>CAB-20</sku>
+  <name>Antennakábel 20 m</name>
+  <brand>Optilink</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000127</ean>
+  <price_gross>6300</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/antennakabel-20-m-cab-20</url>
+ </product>
+ <product>
+  <sku>DECT-10</sku>
+  <name>Asztali DECT telefon</name>
+  <brand>Optilink</brand>
+  <category>Telefon</category>
+  <ean>5990000000059</ean>
+  <price_gross>18900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/asztali-dect-telefon-dect-10</url>
+ </product>
+ <product>
+  <sku>URH-CAR</sku>
+  <name>Autós URH rádió</name>
+  <brand>Nordcom</brand>
+  <category>Rádió</category>
+  <ean>5990000000042</ean>
+  <price_gross>62900</price_gross>
+  <currency>HUF</currency>
+  <stock>4</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/autos-urh-radio-urh-car</url>
+ </product>
+ <product>
+  <sku>DECT-20</sku>
+  <name>DECT telefon, 2 kézibeszélő</name>
+  <brand>Optilink</brand>
+  <category>Telefon</category>
+  <ean>5990000000066</ean>
+  <price_gross>27900</price_gross>
+  <currency>HUF</currency>
+  <stock>15</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/dect-telefon-2-kezibeszelo-dect-20</url>
+ </product>
+ <product>
+  <sku>MNT-WALL</sku>
+  <name>Falikonzol antennához</name>
+  <brand>Nordcom</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000233</ean>
+  <price_gross>2900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/falikonzol-antennahoz-mnt-wall</url>
+ </product>
+ <product>
+  <sku>SW-8</sku>
+  <name>Hálózati switch 8 port</name>
+  <brand>Optilink</brand>
+  <category>Hálózat</category>
+  <ean>5990000000240</ean>
+  <price_gross>12900</price_gross>
+  <currency>HUF</currency>
+  <stock>11</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/halozati-switch-8-port-sw-8</url>
+ </product>
+ <product>
+  <sku>HS-RADIO</sku>
+  <name>Hangosbeszélő-mikrofon URH-hoz</name>
+  <brand>Vetron</brand>
+  <category>Headset</category>
+  <ean>5990000000202</ean>
+  <price_gross>7900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/hangosbeszelo-mikrofon-urh-hoz-hs-radio</url>
+ </product>
+ <product>
+  <sku>ANT-YAGI</sku>
+  <name>Irányított antenna 700-2600 MHz</name>
+  <brand>Vetron</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000103</ean>
+  <price_gross>14900</price_gross>
+  <currency>HUF</currency>
+  <stock>18</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/iranyitott-antenna-700-2600-mhz-ant-yagi</url>
+ </product>
+ <product>
+  <sku>BOOST-3</sku>
+  <name>Jelerősítő tápegység</name>
+  <brand>Nordcom</brand>
+  <category>Jelerősítő</category>
+  <ean>5990000000172</ean>
+  <price_gross>6900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/jelerosito-tapegyseg-boost-3</url>
+ </product>
+ <product>
+  <sku>URH-100</sku>
+  <name>Kézi URH adóvevő 5 W</name>
+  <brand>Vetron</brand>
+  <category>Rádió</category>
+  <ean>5990000000011</ean>
+  <price_gross>45900</price_gross>
+  <currency>HUF</currency>
+  <stock>10</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/kezi-urh-adovevo-5-w-urh-100</url>
+ </product>
+ <product>
+  <sku>URH-200</sku>
+  <name>Kézi URH adóvevő 8 W, IP67</name>
+  <brand>Vetron</brand>
+  <category>Rádió</category>
+  <ean>5990000000028</ean>
+  <price_gross>76400</price_gross>
+  <currency>HUF</currency>
+  <stock>7</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/kezi-urh-adovevo-8-w-ip67-urh-200</url>
+ </product>
+ <product>
+  <sku>BOOST-2</sku>
+  <name>Mobil jelerősítő, iroda</name>
+  <brand>Nordcom</brand>
+  <category>Jelerősítő</category>
+  <ean>5990000000165</ean>
+  <price_gross>138600</price_gross>
+  <currency>HUF</currency>
+  <stock>9</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/mobil-jelerosito-iroda-boost-2</url>
+ </product>
+ <product>
+  <sku>BOOST-1</sku>
+  <name>Mobil jelerősítő, lakás</name>
+  <brand>Nordcom</brand>
+  <category>Jelerősítő</category>
+  <ean>5990000000158</ean>
+  <price_gross>89000</price_gross>
+  <currency>HUF</currency>
+  <stock>5</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/mobil-jelerosito-lakas-boost-1</url>
+ </product>
+ <product>
+  <sku>FIB-10</sku>
+  <name>Optikai patch kábel 10 m</name>
+  <brand>Optilink</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000141</ean>
+  <price_gross>3900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/optikai-patch-kabel-10-m-fib-10</url>
+ </product>
+ <product>
+  <sku>FIB-3</sku>
+  <name>Optikai patch kábel 3 m</name>
+  <brand>Optilink</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000134</ean>
+  <price_gross>2400</price_gross>
+  <currency>HUF</currency>
+  <stock>0</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/optikai-patch-kabel-3-m-fib-3</url>
+ </product>
+ <product>
+  <sku>BAT-URH</sku>
+  <name>Pótakkumulátor URH-hoz</name>
+  <brand>Vetron</brand>
+  <category>Rádió</category>
+  <ean>5990000000226</ean>
+  <price_gross>8900</price_gross>
+  <currency>HUF</currency>
+  <stock>15</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/potakkumulator-urh-hoz-bat-urh</url>
+ </product>
+ <product>
+  <sku>ANT-OM</sku>
+  <name>Rúdantenna 2,4 GHz</name>
+  <brand>Vetron</brand>
+  <category>Antenna és kábel</category>
+  <ean>5990000000097</ean>
+  <price_gross>8900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/rudantenna-2-4-ghz-ant-om</url>
+ </product>
+ <product>
+  <sku>CHG-URH</sku>
+  <name>Töltőállvány URH-hoz</name>
+  <brand>Vetron</brand>
+  <category>Rádió</category>
+  <ean>5990000000219</ean>
+  <price_gross>6900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/toltoallvany-urh-hoz-chg-urh</url>
+ </product>
+ <product>
+  <sku>URH-PAIR</sku>
+  <name>URH adóvevő pár, 2 db</name>
+  <brand>Nordcom</brand>
+  <category>Rádió</category>
+  <ean>5990000000035</ean>
+  <price_gross>39900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/urh-adovevo-par-2-db-urh-pair</url>
+ </product>
+ <product>
+  <sku>HS-20</sku>
+  <name>Vezeték nélküli headset</name>
+  <brand>Optilink</brand>
+  <category>Headset</category>
+  <ean>5990000000196</ean>
+  <price_gross>28400</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/vezetek-nelkuli-headset-hs-20</url>
+ </product>
+ <product>
+  <sku>HS-10</sku>
+  <name>Vezetékes fejhallgató mikrofonnal</name>
+  <brand>Optilink</brand>
+  <category>Headset</category>
+  <ean>5990000000189</ean>
+  <price_gross>9900</price_gross>
+  <currency>HUF</currency>
+  <stock>20</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/vezetekes-fejhallgato-mikrofonnal-hs-10</url>
+ </product>
+ <product>
+  <sku>VOIP-30</sku>
+  <name>VoIP asztali telefon</name>
+  <brand>Nordcom</brand>
+  <category>Telefon</category>
+  <ean>5990000000073</ean>
+  <price_gross>32900</price_gross>
+  <currency>HUF</currency>
+  <stock>9</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/voip-asztali-telefon-voip-30</url>
+ </product>
+ <product>
+  <sku>VOIP-40</sku>
+  <name>VoIP konferencia telefon</name>
+  <brand>Nordcom</brand>
+  <category>Telefon</category>
+  <ean>5990000000080</ean>
+  <price_gross>119000</price_gross>
+  <currency>HUF</currency>
+  <stock>3</stock>
+  <url>https://zoltankothencz-design.github.io/erp-webshop-minta/demo/shop/product/voip-konferencia-telefon-voip-40</url>
+ </product>
+</products>
